@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-size: contain;
+  font-family: "Fredoka", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    margin: auto;
+  }
+}
+
+.container .time-area span {
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+@media (min-width: 1400px) {
+  .container .time-area span {
+    font-size: 50px;
+  }
+}
+
+.container .control-area {
+  width: 50%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .container .control-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.container .control-area span {
+  color: white;
+  background-color: #ed44bc;
+  padding: 10px 30px;
+  border: 3px dashed white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.container .control-area span:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 1400px) {
+  .container .control-area span {
+    font-size: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
